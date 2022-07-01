@@ -1,0 +1,44 @@
+연산자
+	연산의 결과가 어떤 타입인지 파악하는 것이 중요!!
+	
+	산술연산자
+		+ :	-char타입: int 타입으로 연산 됨(아스키 코드 참고)
+			-String: 연결
+
+		- :	-char : int타입으로 연산
+			-String: 연산불가
+
+		* :	-char: int 타입으로 연산
+			-String: 곱연산 불가
+
+		/ : 	-char: int 타입 연산
+			-String타입은 나눗넴 연산 불가
+
+		%(나머지 연산자)
+
+관계(비교) 연산자
+
+	boolean 타입 자료형
+		true, false(0,":,false)
+
+	관계연산자의 연간의 결과는 boolean 타입이다.
+
+	<, >, ==, !=, >=,  <=
+
+	String 타입의 비교는 .equals() 메서드를 사용하여아한다.
+				-> 문자열1.equals(문자열2);
+					->문자열1 과 문자열2를 비요하여 boolean값을 알려줌
+
+
+논리연산자
+	&&, ||, !
+
+	&&(and)
+		교집합
+		ex) true and false
+	||(or)
+		합집합
+		ex) true or false
+	!(not)
+		부정
+		ex) !true ,  !false
