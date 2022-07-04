@@ -11,19 +11,19 @@ public class Homework {
 //			대문자라면  소문자로 변경해서 출력
 //			알파벳이 아니라면 그대로 출력
 		
-//		System.out.println("문자를 입력해주세요");
-//		char word = sc.next().charAt(0);
-//		
-//		if(word>=97 && word<=122) {
-//			
-//		System.out.println((char)(word -32));
-//		}else if (word <97 && word>=65){
-//			
-//			System.out.println((char)(word + 32));
-//		}else {
-//			
-//			System.out.println(word);
-//		}
+		System.out.println("한자리 문자를 입력해주세요");
+		char word = sc.next().charAt(0);
+		
+		if(word>=97 && word<=122) {
+			
+		System.out.println((char)(word -32));
+		}else if (word <97 && word>=65){
+			
+			System.out.println((char)(word + 32));
+		}else {
+			
+			System.out.println(word+"");
+		}
 		
 		//사용자에게 대문자를 입력 받아서
 		//소문자로 변경하는 프로그램
@@ -64,7 +64,33 @@ public class Homework {
 //			추가 분 입력: 40
 //			시간: 오전 11시 30분
 		
+		System.out.println("시 를 입력해주세요");
+		int time = sc.nextInt();
+		System.out.println("분을 입력해주세요");
+		int muniute = sc.nextInt();
+		System.out.println("더하기 윈하는 분을 입력");
+		int plus = sc.nextInt();
+		int totalM = muniute + plus;
+		int aft = time - 12;
 		
-		
+		if(totalM  >= 60 && time >= 12) {
+			System.out.printf("오후 %d시 %d분입니다.",aft+1,totalM-60);
+		}else if(time == 12) {
+			System.out.printf("오후 %d시 %d분입니다.",time, totalM);
+		}
+		else if(time > 12){
+			if(totalM < 60) {
+				System.out.printf("오후 %d시 %d분입니다.",aft, totalM);
+			}
+		}else if(time <= 12) {
+			if(totalM >= 60) {
+				System.out.printf(" %d시 %d분입니다.",time+1,totalM);
+			}
+		}else if(time <= 12){
+			if(totalM < 60) {
+				System.out.printf("%d시 %d분입니다.",time, totalM);
+				}
+		}
 	}
 }
+
