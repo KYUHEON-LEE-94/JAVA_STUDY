@@ -16,9 +16,9 @@ public class UpdownGame {
 		//축하합니다 정답을 00회만에 맞추셨습니다.
 		//프로그램 만들기
 		
-		int i, input, ran;
+		int i, input;
 		i = 0;
-		ran = r.nextInt(1, 100);
+		int ran = r.nextInt(101);
 		boolean check = true;
 		
 			while(check) {	
